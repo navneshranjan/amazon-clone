@@ -1,7 +1,23 @@
 import React from "react";
 import "./Product.css";
+import { useStatevlaue } from "./StateProvider";
 
 function Product({ id, title, price, rating, image }) {
+  // call the store
+  const [{}, dispatch] = useStatevlaue();
+  const addTobasket = () => {
+    // Add item to the basket
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: id,
+        title: title,
+        price: price,
+        rating: rating,
+      },
+    });
+  };
+
   return (
     <div className="product">
       <div className="product__info">
@@ -20,7 +36,7 @@ function Product({ id, title, price, rating, image }) {
       </div>
 
       <img src={image} alt="Book" />
-      <button>Add to basket</button>
+      <button onClick={addTobasket}>Add to basket</button>
     </div>
   );
 }
