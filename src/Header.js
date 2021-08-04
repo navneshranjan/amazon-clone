@@ -7,6 +7,8 @@ import { useStatevlaue } from "./StateProvider";
 function Header() {
   // Need access to the store
   const [{ basket }] = useStatevlaue();
+  console.log(basket);
+
   return (
     <nav className="header">
       {/* logo */}

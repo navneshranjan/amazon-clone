@@ -1,0 +1,22 @@
+.checkoutProduct {
+  display: flex;
+}
+.checkoutProduct_image {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
+.checkoutProduct_title {
+  font-size: 17px;
+  font-weight: 800;
+}
+.checkoutProduct_info {
+  padding-left: 20px;
+}
+.checkoutProduct > button {
+  background-color: burlywood;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: rgb(61, 55, 47);
+  color: aquamarine;
+}
