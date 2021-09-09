@@ -13,21 +13,21 @@ function Checkout() {
         src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.JPG"
         alt="Add"
       />
-      {basket.length === 0 ? (
+      {basket?.length === 0 ? (
         <div>
           <h2>Your Shopping Basket is empty</h2>
           <p>
-            You have no item in your basket.To buy one or gift to soma one click
-            on "Add To basket" next to the item
+            your shopping basket is empty to buy the product just click on add
+            to basket button next to the product
           </p>
         </div>
       ) : (
         <div>
-          <h2 className="checkout_title"> your Shopping basket</h2>
-          {/* list out all checkout product */}
-          {basket.map((item) => (
+          <h2 className="checkout__title"> your Shopping basket</h2>
+          {/* list out allf the checkout product */}
+          {basket?.map((item) => (
             <CheckoutProduct
-              item={item.id}
+              id={item.id}
               title={item.title}
               image={item.image}
               price={item.price}

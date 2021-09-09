@@ -13,10 +13,17 @@
 .checkoutProduct_info {
   padding-left: 20px;
 }
-.checkoutProduct > button {
-  background-color: burlywood;
+.checkoutproduct_rating {
+  display: flex;
+}
+.checkoutproduct_title {
+  font-size: 17px;
+  font-weight: 800;
+}
+.checkoutProduct_info > button {
+  background-color: rgb(245, 169, 69);
   border: 1px solid;
   margin-top: 10px;
-  border-color: rgb(61, 55, 47);
-  color: aquamarine;
+  border-color: rgb(121, 108, 93);
+  color: rgb(255, 255, 255);
 }

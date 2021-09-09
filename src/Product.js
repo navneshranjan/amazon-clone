@@ -4,7 +4,7 @@ import { useStatevlaue } from "./StateProvider";
 
 function Product({ id, title, price, rating, image }) {
   // call the store
-  const [{}, dispatch] = useStatevlaue();
+  const [{ basket }, dispatch] = useStatevlaue();
   const addTobasket = () => {
     // Add item to the basket
     dispatch({
